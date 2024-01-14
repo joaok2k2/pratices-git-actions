@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output GitHub Context
-        run: echo "${{ toJSON(github) }}"
+        run: echo "${{ toJSON(github.actions_path) }}"
       - name: Print repositorie name
         run: echo "${{ github.repository }}"
