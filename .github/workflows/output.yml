@@ -6,3 +6,5 @@ jobs:
     steps:
       - name: Output GitHub Context
         run: echo "${{ toJSON(github) }}"
+      - name: Print repositorie name
+        run: echo "${{ github.repository}}"
