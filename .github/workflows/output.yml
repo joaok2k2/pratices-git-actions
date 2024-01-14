@@ -6,3 +6,4 @@ jobs:
     steps:
       - name: hello world
         run: echo "hello men"
+        run: "echo olá"
