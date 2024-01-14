@@ -1,0 +1,11 @@
+name: Test Project
+on: push 
+    branches: main
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git Clone
+        uses: actions/checkout@3
+      - name: Install Dependences
+        run: npm install
